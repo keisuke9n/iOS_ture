@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>つれづれノート – プライバシーポリシー</title>
+
+  <!-- Google Font（お好みで変更可）-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --brand: #007aff;   /* ワンポイントの青 */
+      --text:  #1a1a1a;
+      --bg:    #f9fafb;
+      --surface: #ffffff;
+      --radius: 1rem;
+      --shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      padding: 2.5rem 1.25rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    header h1 {
+      color: var(--brand);
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: .25rem;
+    }
+
+    header p { font-size: 1rem; color: #555; }
+
+    main {
+      width: 100%;
+      max-width: 840px;
+      margin: 3rem auto;
+      padding: 0 1.25rem;
+      flex: 1;
+    }
+
+    section {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    section h2 {
+      color: var(--brand);
+      font-size: 1.25rem;
+      margin-bottom: .75rem;
+      font-weight: 600;
+    }
+
+    section ul { list-style: none; padding-left: 0; }
+
+    section ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: .75rem;
+    }
+    section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: .875rem;
+      color: #666;
+    }
+
+    /* ダークモード対応 */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --surface: #1f2937;
+        --text: #f9fafb;
+        --shadow: none;
+      }
+      header p   { color: #a1a1aa; }
+      footer     { color: #9ca3af; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>つれづれノート プライバシーポリシー</h1>
+    <p>最終更新日：<strong>2025年7月4日</strong></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. はじめに</h2>
+      <p><strong>つれづれノート</strong>（以下「本アプリ」）は、Apple HealthKit に保存された血圧・脈拍・歩数データを読み取り、色分けヒートマップやテキスト表として視覚化するアプリです。プライバシー保護は私たち <strong>健康奉仕</strong> の最優先事項です。</p>
+    </section>
+
+    <section>
+      <h2>2. 取得するデータ</h2>
+      <ul>
+        <li><strong>血圧</strong>（収縮期／拡張期）</li>
+        <li><strong>脈拍数</strong></li>
+        <li><strong>歩数</strong></li>
+      </ul>
+      <p>いずれも HealthKit から <em>ユーザーの明示的な許可</em> を得てのみ読み取ります。</p>
+    </section>
+
+    <section>
+      <h2>3. しないこと</h2>
+      <ul>
+        <li>HealthKit への書き込み</li>
+        <li>外部サーバーへの通信・クラウド保存</li>
+        <li>第三者解析 SDK や広告トラッキング</li>
+        <li>個人を特定できる情報の収集・共有</li>
+      </ul>
+      <p>つまり <strong>100% オフライン処理</strong> です。</p>
+    </section>
+
+    <section>
+      <h2>4. データの利用目的</h2>
+      <ul>
+        <li>端末上でヒートマップ・表を生成し、日々の変化を視覚化</li>
+        <li>ユーザーがエクスポートを選択した場合のみ、画像やテキストを生成</li>
+        <li>上記処理はすべてローカルで完結し、許可なく外部送信しません</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. プレミアム機能</h2>
+      <p>アプリ内課金（買い切り）で 2 ヶ月／3 ヶ月ビューと共有機能が解放されます。支払い処理は Apple StoreKit 2 を通じて行われ、健康奉仕 は決済情報を保持しません。</p>
+    </section>
+
+    <section>
+      <h2>6. ユーザーの選択肢</h2>
+      <ul>
+        <li>HealthKit アクセスは <em>設定 › ヘルスケア › データアクセスとデバイス</em> でいつでも解除可</li>
+        <li>アプリ削除でキャッシュ・設定は端末から完全に削除</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. お問い合わせ</h2>
+      <p>プライバシーポリシーに関するご質問は下記までご連絡ください。</p>
+      <p><strong>メール：</strong><a href="mailto:keisuke9n@gmail.com">keisuke9n@gmail.com</a></p>
+      <p><strong>開発者：</strong>健康奉仕</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Metamorph. All rights reserved.
+  </footer>
+</body>
+</html>
